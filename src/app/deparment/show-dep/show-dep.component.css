@@ -1,0 +1,14 @@
+.table-text.price.last.float-left.col-sm-6.totalleft {
+    background: #401818;
+    padding: 25px;
+    color: #fff;
+}
+.table-text.price.float-right.col-sm-6.totallright {
+    background: #121212;
+    padding: 25px;
+    color: #fff;
+}
+
+div#price {
+    margin-bottom: 20px;
+}

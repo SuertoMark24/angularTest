@@ -1,0 +1,41 @@
+
+<div class="form-froup row" >
+        <label class="col-sm-4" >Account Name:</label>
+        <div class="col-sm-12">
+            <select class="form-control" [(ngModel)]="Department">
+                <option>--Select--</option>
+                <option *ngFor="let depName of DepartmentsList">
+                    {{depName.DepartmentName}}
+                </option>
+            </select>
+        </div>
+        <br />
+        <br />
+        <label class="col-md-6" >DEC</label>
+        <div class="col-sm-12">
+            <input type="number" class="form-control" [(ngModel)]="EmployeeName" placeholder="Enter DEC Amount" required>
+        </div>
+        <br />
+        <br />
+
+
+    <label class="col-md-8" >Date</label>
+    <div class="col-md-12">
+        <input class="date" type="date"  class="form-control" [(ngModel)]="DateOfJoining">
+    </div>
+    <br />
+    <br />
+    <!-- <div class="col-md-4">
+        <img [src] = PhotoFilePath height="250px" width="200px" />
+        <input type="file" (change)="uploadPhoto($event)"  class="mt-2">
+    </div>
+   -->
+    
+
+    
+
+</div>
+<br />
+<button (click)="addEmployee()" *ngIf="emp.EmployeeId==0" class="btn btn-primary col-sm-4" >Add</button>
+<button (click)="updateEmployee()" *ngIf="emp.EmployeeId!=0" class="btn btn-primary col-sm-4">Update</button>
+

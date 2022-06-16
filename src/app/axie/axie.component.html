@@ -1,0 +1,57 @@
+<!-- <div *ngFor="let cn of coin" ng-app = "" ng-controller="coinController" style="text-align:right; ">
+    <span>
+        1 SLP = 
+    </span>
+    <span id="refresh" ng-model="add.amount1"  >
+        <strong>{{ cn.current_price }}</strong>  
+    </span>
+    &nbsp;
+    <button id="refresh" class="m-1 btn btn-primary " (click)="reloadCurrentPage()" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+          </svg>
+    </button>
+  </div> -->
+  <div class="box">
+    <div class="box1">
+      <strong>In Game SLP</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 11">{{sss}} </div>
+      </div>
+    </div>
+    <div class="box1">
+      <strong>Ronin SLP</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 9">{{sss}} </div>
+      </div>
+    </div>
+    <div class="box1">
+      <strong>TOTLA SLP</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 11" id="test">{{sss}} </div>
+      </div>
+    </div>
+    <div class="box1">
+      <strong>MMR</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 7">{{sss}} </div>
+      </div>
+    </div>
+    <div class="box1">
+      <strong>RANK</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 8">{{sss}} </div>
+      </div>
+    </div>
+    <div class="box1">
+      <strong>Next CLaim</strong>
+      <div class="" *ngFor="let sss of slp ; let i = index"> 
+        <div *ngIf="i === 15">{{sss}} </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+

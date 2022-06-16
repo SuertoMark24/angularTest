@@ -1,0 +1,7 @@
+.table thead th {
+  vertical-align: top !important;
+}
+
+.table thead th span {
+  padding-top: 7px !important;
+}

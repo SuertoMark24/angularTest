@@ -1,0 +1,94 @@
+<!-- <div class="stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div> -->
+
+<div class="container" ng-app="myApp" ng-controller="MainCtrl">
+    <br />
+    
+    <!-- <div style="text-align:center">
+        <img src="./assets/images/splinterlands_logo_fx_1000.png" alt="image" >
+        <img src="./assets/images/CodeSnippetBackground.png" alt="image" >
+    </div>
+   -->
+    <br />
+    <br />
+    <!-- <h3 class="d-flex justify-content-center"> My Angular project</h3> -->
+    <!-- <h2 class="d-flex justify-content-center" style="color:#fff;">NFT & CRYPTO TRACKER </h2> -->
+    <div class="display-currency">
+
+        <div *ngFor="let rrr of DEC"  class="float-left ">
+                <button class="test"  routerLink="dec"  (click)="reloadCurrentPage()" >DEC<hr />₱{{ rrr.current_price | number:'1.2-2' }}</button>
+        </div>
+      
+        <div *ngFor="let rrr of sps"  class="float-left ">
+            <button class="test"  routerLink="splinteshards"  (click)="reloadCurrentPage()" >SPS<hr />₱{{ rrr.current_price  | number:'1.2-2'}}</button>
+        </div>
+        
+        <div *ngFor="let rrr of slp"  class="float-left ">
+            <button class="test"  routerLink="slp"  (click)="reloadCurrentPage()" >SLP<hr />₱{{ rrr.current_price | number:'1.2-2' }}</button>
+        </div>
+        
+        <div *ngFor="let rrr of shib"  class="float-left ">
+            <button class="test"  routerLink="shiba"  (click)="reloadCurrentPage()" >SAITAMA<hr />₱{{ rrr.current_price | number:'1.4-6' }}</button>
+        </div>
+        <div *ngFor="let rrr of shib"  class="float-left ">
+            <button class="test"  routerLink="pexel"  (click)="reloadCurrentPage()" >Pexel<hr /></button>
+        </div>
+        
+    </div>
+    <br />
+    <br />
+
+<router-outlet></router-outlet>
+
+</div>
+

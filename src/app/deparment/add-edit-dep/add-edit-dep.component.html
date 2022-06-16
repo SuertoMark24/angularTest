@@ -1,0 +1,16 @@
+
+<div class="form-froup row">
+    <label class="col-sm-4" >Account Name:</label>
+    <div class="col-sm-12">
+        <input type="text" class="form-control" [(ngModel)]="DepartmentName" placeholder="Enter Department Name" required>
+        <br />
+        <input type="text" class="form-control" [(ngModel)]="TotalDec" placeholder="Enter DEC Amount" required>
+        <br />
+        <input class="date" class="form-control" type="date"  [(ngModel)]="DateOfJoining">
+    </div>
+  
+  
+</div>
+<br />
+<button (click)="addDepartment()" *ngIf="dep.DepartmentId==0" class="btn btn-primary col-sm-4" id="closeModal">Add</button>
+<button (click)="updateDepartment()" *ngIf="dep.DepartmentId!=0" class="btn btn-primary col-sm-4" id="closeModal">Update</button>

@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://axie-scho-tracker-server.herokuapp.com/api/account/ronin:6f69849b35d6179d362dc544c9104037696c86ae",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
