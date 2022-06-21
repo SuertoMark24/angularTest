@@ -63,6 +63,7 @@ export class AppComponent implements OnInit {
     this.getShiba();
     this.getSps();
     this.getSlp();
+    this.Total();
   }
 
   reloadCurrentPage(){
@@ -70,6 +71,27 @@ export class AppComponent implements OnInit {
     this.getShiba();
     this.getSps();
     this.getSlp();
+  }
+
+  Total(){
+    let decTotal = 0; 
+    let shibTotal = 0; 
+    let spsTotal = 0; 
+    let slpTotal = 0; 
+
+    for(let dec of this.DEC){
+      decTotal = (dec.current_price);    
+    }
+    for(let shib of this.shib){
+      shibTotal = (shib.current_price);    
+    }
+    for(let sps of this.sps){
+      spsTotal = (sps.current_price);    
+    }
+    for(let slp of this.slp){
+      slpTotal = (slp.current_price);    
+    }
+    return decTotal + shibTotal + spsTotal + slpTotal;
   }
 
 

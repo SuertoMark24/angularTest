@@ -81,7 +81,10 @@
             <button class="test"  routerLink="shiba"  (click)="reloadCurrentPage()" >SAITAMA<hr />₱{{ rrr.current_price | number:'1.4-6' }}</button>
         </div>
         <div *ngFor="let rrr of shib"  class="float-left ">
-            <button class="test"  routerLink="pexel"  (click)="reloadCurrentPage()" >Pexel<hr /></button>
+            <button class="test"  routerLink="pexel"  (click)="reloadCurrentPage()" >Pexel<hr /> API</button>
+        </div>
+        <div *ngFor="let rrr of shib"  class="float-left ">
+            <button class="test"  routerLink="pexel"  (click)="reloadCurrentPage()" >Total<hr /> {{Total()}}</button>
         </div>
         
     </div>

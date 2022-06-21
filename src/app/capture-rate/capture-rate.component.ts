@@ -17,7 +17,7 @@ export class CaptureRateComponent implements OnInit {
  
   readonly Coinurl2 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=php&ids=usd-coin&order=market_cap_desc&per_page=100&page=1&sparkline=false';
   
-  readonly Coinurl3 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=php&ids=saitama-inu&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+  readonly Coinurl3 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=saitama-inu&order=market_cap_desc&per_page=100&page=1&sparkline=false';
   
 
   constructor(private service:SharedService , private http: HttpClient ) { }
